@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/formulario.js"></script>
+    <title>Web</title>
+</head>
+<body class="gridOutros">
+    <nav class="outros"> <!-- Links de navegação -->
+        <ul>
+    <li><a href="index.html">Página inicial</a></li>
+    <li><a href="sobreProgramacaoSolucao.html">Programação</a></li>
+    <li><a href="sobreBancoDeDados.html">Banco de Dados</a></li>
+    <li><a href="sobreLinux.html">Linux</a></li>
+    <li><a href="sobreEdicaoDeImagens.html">Edição de Imagens</a></li>
+    <li><a href="sobreModelagem3D.html">Modelagem 3D</a></li>
+    <li><a href="sobreProgamacaoWeb.html">Web</a></li>
+    <li><a href="sobreMin.html">Sobre min</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="central">Sobre Web</h1> <!-- Título da página -->
+
+    <form class="exemplo" name="formex" action="enviar.php" method="POST" onsubmit="return validar(this)"> <!-- bloco esquerdo, form-->
+        <h2 class="titulos">
+            Formulário de exemplo
+        </h2>
+        <p>
+            Didite seu nome: <br> <input type="text" name="nome" size="30%"> <!-- required seria uma opção de validação no html-->
+        </p>
+        <p>Sexo: <select name="sexo">
+            <option value=""> Selecione </option>
+            <option value="fe">Feminino</option>
+            <option value="ma">Masculino</option>
+            <option value="ou">Outro</option>
+         </select></p>
+        <p>
+            Didite e-mail: <br> <input type="text" name="email" size="30%">
+        </p>
+        <p>
+            Didite cep: <br> <input type="text" name="cep" size="30%">
+        </p>
+        <p>Município/Estado: <br> <input type="text" name="municipio"> 
+            <select name="estado">
+                <option value=""> Selecione </option>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option> 
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+            </select></p>
+            <p><input type="submit" name="salvar" value="Salvar"> </p>
+    </form>
+    <p class="outros"> Ainda estou aprendendo sobre programação web, mas com o que eu aprendi até agora eu <!-- Bloco centro e direita -->
+         consegui desenvolver essa página utilizando <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>.</p>
+</body>
+</html>

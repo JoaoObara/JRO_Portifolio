@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box; /*Ajustar caixas conforme a borda*/
+} 
+
+/*         ########## CLASSES ##########           */
+.box{
+    border: dotted 5px rgba(2, 9, 73, 0.4);
+    margin: 2px 2px;
+    padding: 10px 10px;
+    width: auto;
+    height: auto;
+}
+
+.container{ /*grid index*/
+    display:grid ;
+    grid-template-columns: 1.15fr 3fr 3fr 3fr; /*colunas e suas medidas*/
+    grid-template-rows: 45vh 45vh 8vh; /*linhas e suas medidas*/
+    grid-template-areas: "n s12 s13 s14" 
+                         "n s22 s23 s24"
+                         "f f f f";
+}
+.gridOutros{ /* grid outros */
+    display:grid ;
+    grid-template-columns: 1fr 2fr 2fr ; /*colunas e suas medidas*/
+    grid-template-rows: 30vh 45vh; /*linhas e suas medidas  em px 240px 365px*/
+    grid-template-areas: "nav row1 row1 " /* r = row   c = column*/
+                         "r2c1 row2 row2 ";
+}
+
+h2.titulos{ /* Titulo da pagina index */
+    color: rgb(4, 4, 112);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+p.index{ /* utilizado nos blocos da pag Index */
+    font-size: 20px;
+    background-color: #777777e1;
+    width: 10fr;
+    height: 30vh;
+    margin-top: 30px;
+}
+
+p.outros{ /* utilizado na parte inferior central e direita das pags */
+    grid-area: row2;
+    font-size: 20px;
+    margin-left: 10px ;
+    background-color: #777777e1;
+    border: dotted 2px rgb(2, 9, 73);
+    height: 145%;
+    padding: 5% 5%;
+}
+p.esquerdoInferior{ /* utilizado na parte esquerda inferior das pags */
+    grid-area: r2c1;
+    font-size: 20px;
+    border:dashed 2px rgb(2, 9, 73,0.3);
+    background-color: #777777e1;
+    height: 145%;
+    padding: 50px 10px;
+}
+
+nav.inicio{ /* nav da pag index */
+    grid-area: n;
+    border-right: double 2px rgb(2, 9, 73);
+    border-bottom: double 2px rgb(2, 9, 73);
+}
+nav.outros{
+    grid-area: nav;
+}
+h1.central{ /* Titulos de paginas exceto index */
+    text-align:center;
+    grid-area: row1;
+    margin-top: 100px;
+    color: rgb(4, 4, 112);
+}
+form.exemplo{ /* formlulario da questão 5 */
+    grid-area: r2c1;
+    border:dashed 2px rgb(2, 9, 73,0.3);
+    background-color: #777777e1;
+    height: 68vh;
+}
+
+dl.imagens{
+    grid-area: row2;
+    padding:3% 3%;
+
+}
+/*         ########## ESTILOS DE TAGS ##########           */
+
+body {
+    background-color: #808080; 
+}
+nav{
+    font-family: Apple Chancery, cursive, sans-serif;
+    font-size: 15px;
+}
+footer{
+    grid-area: f;
+    border: dashed 2px rgb(2, 9, 73,0.3);
+    margin-top: 3px;
+}
+ul{
+    list-style-type:circle;
+}
+section{
+    text-align: center;
+}
+p{
+    background-color: #777777e1;
+}
+h5{
+    text-align: center;
+}
